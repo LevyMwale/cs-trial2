@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Fade from 'react-reveal/Fade';
 
 function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
         return (
         <Wrap bgImage={backgroundImg}>
+            <Fade bottom>
             <ItemText>
                 <h1 style={{
                     fontFamily: 'monospace',
@@ -16,7 +17,6 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                     margin: 8,
                     padding: 4,
                     borderRadius: 13,
-
                    
                 }}>{title}</h1>
               
@@ -37,7 +37,9 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
             {description}
                 </h4>
             </ItemText>
-            
+            </Fade>
+           
+            <Fade bottom>
             <ButtonGroup>
                 <LeftButton>
                    {leftBtnText} 
@@ -47,6 +49,8 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                 </RightButton>}
                 
             </ButtonGroup>
+            </Fade>
+          
             <DownArrow src="/images/down-arrow.svg" />
         </Wrap>
     )

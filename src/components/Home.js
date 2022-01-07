@@ -9,7 +9,7 @@ function Home() {
            <Section
               title="Customer Service and Planning"
               description="Production Planning, Order Management, Inventory"
-              backgroundImg="cs2.jpg"
+              backgroundImg="sc.jpg"
               leftBtnText="Customer Service"
               rightBtnText="Planning"
            />
